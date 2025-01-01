@@ -1,6 +1,6 @@
 import { WeatherResponse, WeatherForecast } from '../interfaces/WeatherInterfaces';
 
-const API_KEY = 'c6b40f2e22b7db716a15d9545aaa65d2';
+const API_KEY = 'cc6b40f2e22b7db716a15d9545aaa65d2';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 export const fetchWeatherByCity = async (city: string): Promise<WeatherResponse | null> => {
