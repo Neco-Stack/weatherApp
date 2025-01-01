@@ -74,7 +74,6 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ onSearch, weatherData, hourly
                     </div>
                     <p className='temperature-description'>{weatherData.weather[0]?.description}</p> 
 
-                    {/* Standort mit SVG-Icon */}
                     <h2 className='location'>
                         <MdLocationOn />
                         <span>{weatherData.name}</span>

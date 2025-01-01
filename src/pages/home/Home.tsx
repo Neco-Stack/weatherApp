@@ -18,7 +18,7 @@ const Home: React.FC = () => {
                 setWeatherData(currentData);
             }
             if (forecastData) {
-                setHourlyForecast(forecastData.list.slice(0, 4)); // Nimm die ersten 4 Einträge für 12 Stunden (3-Stunden-Intervalle)
+                setHourlyForecast(forecastData.list.slice(0, 4)); 
             }
         };
         

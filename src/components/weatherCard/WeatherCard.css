@@ -111,33 +111,3 @@
  }
  
 
-
-@media (max-width :480px) {
-   .weather {
-       padding :15px; 
-   }
-
-   .search-bar input {
-       font-size :14px; 
-   }
-
-   .temperature {
-       font-size :28px; 
-   }
-
-   .location {
-       font-size :18px; 
-   }
-
-   .humidity-group, .wind-group {
-       font-size :14px; 
-       flex-direction :row; 
-       justify-content :space-around; 
-       width :100%; 
-   }
-}
-.sunny-icon {
-    width: 140px; 
-    height: auto;
-    filter: drop-shadow(0 0 5px orange); /* Fügt einen orangen Schimmer hinzu */
-}
