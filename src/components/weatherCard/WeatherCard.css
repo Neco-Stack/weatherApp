@@ -1,0 +1,143 @@
+.weather {
+    place-self: center;
+    padding: 30px;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-height: 600px;
+    max-width: 400px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-bar input {
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+
+.search-bar img {
+    width: 45px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+    padding: 20px;
+}
+
+.weather-header {
+    display: flex; 
+    align-items: center;
+    gap:5; 
+}
+
+.weather-icon {
+    width: 140px; 
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.temperature {
+    color: #fff;
+    font-size: 36px; 
+    line-height: 1; 
+    text-align: center; 
+    font-family: 'Poppins'; 
+}
+
+.temperature-description {
+    font-size: 16px; 
+    font-family:'Poppins'; 
+    color:white; 
+}
+
+.location {
+    color: #fff; 
+    font-size: 32px; 
+    font-weight: 500; 
+    text-align: center; 
+    padding: 20px; 
+    font-family:'Poppins';
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.weather-info {
+    display: flex; 
+    align-items:center; 
+    justify-content :space-around; 
+    width :100%; 
+}
+
+.humidity-group, .wind-group {
+   display:flex; 
+   align-items:center; 
+   justify-content:center; 
+   gap :4px; 
+   color:white; 
+   font-family:'Poppins'; 
+}
+
+.humidity-group img, .wind-group img {
+    width :40px; 
+    height:auto; 
+    filter: brightness(0) invert(1); 
+ }
+
+ .location svg {
+    font-size :32px; 
+    filter: brightness(0) invert(1); /
+ }
+ 
+
+
+@media (max-width :480px) {
+   .weather {
+       padding :15px; 
+   }
+
+   .search-bar input {
+       font-size :14px; 
+   }
+
+   .temperature {
+       font-size :28px; 
+   }
+
+   .location {
+       font-size :18px; 
+   }
+
+   .humidity-group, .wind-group {
+       font-size :14px; 
+       flex-direction :row; 
+       justify-content :space-around; 
+       width :100%; 
+   }
+}
+.sunny-icon {
+    width: 140px; 
+    height: auto;
+    filter: drop-shadow(0 0 5px orange); /* Fügt einen orangen Schimmer hinzu */
+}
