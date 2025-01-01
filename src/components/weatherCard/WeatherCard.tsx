@@ -11,7 +11,7 @@ import dayCloudy from '../../assets/svg/wi-day-cloudy.svg';
 import windspeed from '../../assets/svg/windspeed.svg';
 import rain from '../../assets/svg/wi-rain.svg';
 import { MdLocationOn } from 'react-icons/md';
-import ShortTermForecast from '../hourlyForecast/ShortTermForecast';
+import ShortTermForecast from '../shortTermForecast/ShortTermForecast';
 
 interface WeatherCardProps {
     onSearch: (city: string) => Promise<WeatherResponse | null>; 
