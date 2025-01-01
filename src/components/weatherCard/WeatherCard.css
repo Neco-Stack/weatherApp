@@ -48,7 +48,7 @@
 .weather-header {
     display: flex; 
     align-items: center;
-    gap:5; 
+    gap: 10px; 
 }
 
 .weather-icon {
