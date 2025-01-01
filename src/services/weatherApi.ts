@@ -25,7 +25,7 @@ export const fetchWeatherByCity = async (city: string): Promise<WeatherResponse 
 
 export const fetchWeatherForecast = async (city: string): Promise<WeatherForecast | null> => {
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric&lang=de`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric&lang=de`);
 
         if (!response.ok) {
             throw new Error('Vorhersage nicht gefunden');
