@@ -1,10 +1,12 @@
 import { WeatherResponse, WeatherForecast } from '../interfaces/WeatherInterfaces';
 
-const API_KEY = 'cc6b40f2e22b7db716a15d9545aaa65d2';
+const API_KEY = 'e1c81ffa14956de084a5f0b68e160e1a';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 export const fetchWeatherByCity = async (city: string): Promise<WeatherResponse | null> => {
     try {
+        console.log(`Fetching weather data for ${city} with API key: ${API_KEY}`);
+
         const response = await fetch(`${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric&lang=de`);
 
         if (!response.ok) {
