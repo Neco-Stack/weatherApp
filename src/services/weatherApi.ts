@@ -13,6 +13,7 @@ export const fetchWeatherByCity = async (city: string): Promise<WeatherResponse 
             throw new Error('Stadt nicht gefunden');
         }
 
+        
         const data: WeatherResponse = await response.json();
         return data;
     } catch (error: unknown) {
@@ -22,6 +23,7 @@ export const fetchWeatherByCity = async (city: string): Promise<WeatherResponse 
             console.error('Ein unbekannter Fehler ist aufgetreten');
         }
         return null;
+
     }
 };
 
